@@ -26,9 +26,9 @@ public class shapes implements Shape {
 	
 	public int compareTo(Shape otherShape) {
 		if (area() > otherShape.area()){
-			return -1;
-		} else {
 			return 1;
+		} else {
+			return -1;
 		}
 	}
 }

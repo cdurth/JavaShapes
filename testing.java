@@ -28,10 +28,12 @@ public class testing {
 		testTriangle.setWidth(4);
 		shapesList.add(testTriangle);
 		
+		// sort using comparator and compareTo function
 		Collections.sort(shapesList, new compare());
 		
+		// print out shapes in ascending order along with type
 		for (int i = 0; i < shapesList.size(); i++) {
-			System.out.println(shapesList.get(i) + " " + shapesList.get(i).area());
+			System.out.println(shapesList.get(i).getClass().getName() + " " + shapesList.get(i).area());
 		}
 		
 		//System.out.println(testCircle.compareTo(testRectangle));
